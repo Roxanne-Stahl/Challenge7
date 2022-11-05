@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+
+
+/* || RESET */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea {
+    font: inherit;
+}
+
+/* || VARIABLES */
+
+:root {
+    /* FONTS */
+    --FONT-FAMILY: 'Plus Jakarta Sans', sans-serif; 
+
+    /* COLORS */
+    --FONT-LIGHT: #FFFFFF;
+    --FONT-COLOR-DARK: #13183F;
+    --FONT-COLOR-MEDIUM: #83869A;
+    --BUTTON-FONT-COLOR: #FFFFFF;
+    --LINK: #f74780;
+
+    
+     
+       
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.center {
+    text-align: center;
+}
+
+/* || GENERAL STYLES */
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--FONT-FAMILY);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 2rem;
+}
+.logo-dark {
+    padding-top: .75rem;
+}
+.buttonHeader {
+    width: 10.4rem;
+    height: 3.5rem;
+    border-radius: 28px;
+    background: #13183F;
+    color: var(--BUTTON-FONT-COLOR);
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 28px;
+    border: red;
+}
+.buttonHeader:hover {
+    opacity: .8;
+    cursor: pointer;
+    transition: 500ms;
+    border: none;
+}
+main {
+    padding: 2rem;
+    margin: 0 auto;
+}
+h1 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 50px;
+    color: var(--FONT-COLOR-DARK);
+}
+main p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 26px;
+    color: var(--FONT-COLOR-MEDIUM);
+    margin-top: 1.625rem;
+}
+.buttonMain {
+    width: 10.4rem;
+    height: 3.5rem;
+    border-radius: 28px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    color: var(--BUTTON-FONT-COLOR);
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 28px;
+    margin-top: 40px;
+    border: none;
+}
+.buttonMain:hover {
+    opacity: .75;
+    cursor: pointer;
+    transition: 500ms;
+    border: none;
+}
+.ombre {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+}
+.table {
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 10px;
+    padding: 2rem;
+} 
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: 1fr;
+}
+.box {
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 15px;
+    justify-content: space-around;
+} 
+#courses {       
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 24px;
+}
+
+#courses h2 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    
+}
+.icon{
+    margin-left: 28px;
+    margin-top: -28px;
+}
+.container h3 {
+    font-weight: 800;
+    font-size: 1.25rem;
+    line-height: 25px;
+    color: var(--FONT-COLOR-DARK);
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+}
+.container p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 26px;
+    height: 4.875rem;
+    color: var(--FONT-COLOR-MEDIUM);
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 1.375rem;
+}
+.container a {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 28px;
+    color: var(--LINK);
+    text-decoration: none;
+    margin-top: 1.5rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+/* || FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: var(--FONT-COLOR-DARK);
+    padding: 2rem;
+}
+.logo-light {
+    padding-top: 1rem;
+}
+.buttonFooter {
+    width: 10.4rem;
+    height: 3.5rem;
+    border-radius: 28px;
+    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%); 
+    color: var(--BUTTON-FONT-COLOR);
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 28px;        
+    border: none;
+}
+.buttonFooter:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    cursor: pointer;
+    transition: 500ms;
+    border: none;
+}
+
+/* ||  MEDIA QUERIES   */
+@media screen and (max-width: 640px){
+    .contentRight img {
+        margin-top: 2.875rem;
+    }
+    #courses h2 {
+        padding: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px){
+    header {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    main {
+        display: flex;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    .contentLeft {
+        width: 24rem;
+    }
+    .contentRight img {
+        position: absolute;
+        top: -10%;
+    } 
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    #courses h2 {
+        padding-top: 3.5rem;
+        padding-right: 1.3rem;
+        padding-bottom: 8.7rem;
+        padding-left: 2rem;
+    }
+    .container a {
+        padding-top: 1.5rem;
+    }
+    footer {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+} 
+
+@media screen and (min-width: 1008px) {
+    header {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    main {
+        display: flex;
+        padding: 10rem;
+    }
+    .contentLeft {
+        width: 29rem;
+    }
+    .contentRight img {
+        position: absolute;
+        top: -10%;
+    } 
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        margin-top: 2.875rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    #courses h2 {
+        padding-top: 4rem;
+        padding-right: 2rem;
+        padding-bottom: 8.7rem;
+        padding-left: 2rem;
+    }
+    .container a {
+        padding-top: 3.255rem;
+    }
+    footer {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
